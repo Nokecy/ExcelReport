@@ -23,7 +23,7 @@ namespace ExcelReport.Driver.EPPlus
         {
             int minColumnNum = ExcelWorksheet.Dimension.Start.Column; //工作区结束行号
             int maxColumnNum = ExcelWorksheet.Dimension.End.Column; //工作区结束行号
-            for (int i = minColumnNum; i < maxColumnNum; i++)
+            for (int i = minColumnNum; i <= maxColumnNum; i++)
             {
                 yield return new Cell(ExcelWorksheet, ExcelRow.Row, i);
             }

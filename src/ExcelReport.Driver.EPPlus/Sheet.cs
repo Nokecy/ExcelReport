@@ -41,7 +41,7 @@ namespace ExcelReport.Driver.EPPlus
         {
             int minRowNum = ExcelWorksheet.Dimension.Start.Row; //工作区开始行号
             int maxRowNum = ExcelWorksheet.Dimension.End.Row; //工作区结束行号
-            for (int i = minRowNum; i < maxRowNum; i++)
+            for (int i = minRowNum; i <= maxRowNum; i++)
             {
                 yield return ExcelWorksheet.Row(i).GetAdapter(ExcelWorksheet);
             }
