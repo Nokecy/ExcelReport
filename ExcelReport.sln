@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{319FF12B-5B28-42B6-87A6-4A31B8049281}"
 EndProject
@@ -22,6 +22,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelReport.Driver.CSV", "src\ExcelReport.Driver.CSV\ExcelReport.Driver.CSV.csproj", "{E1716F47-8A2D-48FB-892F-D2C628A0ACE2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.CSV示例", "examples\4.CSV示例\4.CSV示例.csproj", "{95CA5870-B791-4086-BB5A-6750F81B0737}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.EPPlus示例", "examples\EPPLUS示例\5.EPPlus示例.csproj", "{85463C75-FAFC-4E8B-9BEB-D4533622120F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelReport.Driver.EPPlus", "src\ExcelReport.Driver.EPPlus\ExcelReport.Driver.EPPlus.csproj", "{4E86B5E2-BC5A-4516-AF9A-6CD48DDB92C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPPlus单行重复渲染", "examples\EPPlus单行重复渲染\EPPlus单行重复渲染.csproj", "{4E9BFBD4-240A-48A8-BED1-A172C1661C82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +67,18 @@ Global
 		{95CA5870-B791-4086-BB5A-6750F81B0737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95CA5870-B791-4086-BB5A-6750F81B0737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95CA5870-B791-4086-BB5A-6750F81B0737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85463C75-FAFC-4E8B-9BEB-D4533622120F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85463C75-FAFC-4E8B-9BEB-D4533622120F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85463C75-FAFC-4E8B-9BEB-D4533622120F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85463C75-FAFC-4E8B-9BEB-D4533622120F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E86B5E2-BC5A-4516-AF9A-6CD48DDB92C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E86B5E2-BC5A-4516-AF9A-6CD48DDB92C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E86B5E2-BC5A-4516-AF9A-6CD48DDB92C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E86B5E2-BC5A-4516-AF9A-6CD48DDB92C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E9BFBD4-240A-48A8-BED1-A172C1661C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E9BFBD4-240A-48A8-BED1-A172C1661C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E9BFBD4-240A-48A8-BED1-A172C1661C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E9BFBD4-240A-48A8-BED1-A172C1661C82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +92,9 @@ Global
 		{1D4DF3D2-F983-4C16-9DE9-67B4DA5ED73E} = {D482BFE0-F981-4F4B-9F0E-0C586FA804FA}
 		{E1716F47-8A2D-48FB-892F-D2C628A0ACE2} = {D482BFE0-F981-4F4B-9F0E-0C586FA804FA}
 		{95CA5870-B791-4086-BB5A-6750F81B0737} = {319FF12B-5B28-42B6-87A6-4A31B8049281}
+		{85463C75-FAFC-4E8B-9BEB-D4533622120F} = {319FF12B-5B28-42B6-87A6-4A31B8049281}
+		{4E86B5E2-BC5A-4516-AF9A-6CD48DDB92C5} = {D482BFE0-F981-4F4B-9F0E-0C586FA804FA}
+		{4E9BFBD4-240A-48A8-BED1-A172C1661C82} = {319FF12B-5B28-42B6-87A6-4A31B8049281}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4279AAA3-619A-4506-A58D-AAC9574061E9}
