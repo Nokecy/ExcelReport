@@ -23,6 +23,8 @@ namespace ExcelReport.Driver.EPPlus
             int minColumnNum = ExcelWorksheet.Dimension.Start.Column; //工作区开始行号
             int maxColumnNum = ExcelWorksheet.Dimension.End.Column; //工作区结束行号
 
+            ExcelWorksheet.InsertRow(end + 1, span);
+
             ExcelWorksheet.Cells[start, minColumnNum, end, maxColumnNum].Copy(ExcelWorksheet.Cells[end + 1, minColumnNum, end + span, maxColumnNum], ExcelRangeCopyOptionFlags.ExcludeFormulas);
 
             return end - start + 1;
@@ -31,7 +33,7 @@ namespace ExcelReport.Driver.EPPlus
         public int RemoveRows(int start, int end)
         {
             var span = end - start + 1;
-            //ExcelWorksheet.DeleteRow(start, span, false);
+            ExcelWorksheet.DeleteRow(start, span);
             return span;
         }
 

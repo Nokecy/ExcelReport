@@ -42,9 +42,7 @@ namespace _3.多行重复渲染示例
             //    int minColumnNum = package.Workbook.Worksheets[0].Dimension.Start.Column; //工作区开始行号
             //    int maxColumnNum = package.Workbook.Worksheets[0].Dimension.End.Column; //工作区结束行号
 
-            //    package.Workbook.Worksheets[0].Cells[3, minColumnNum, 3, maxColumnNum].Copy(package.Workbook.Worksheets[0].Cells[3 + 1, minColumnNum, 3 + 1, maxColumnNum], ExcelRangeCopyOptionFlags.ExcludeFormulas);
-
-            //    package.Workbook.Worksheets[0].DeleteRow(3);
+            //    package.Workbook.Worksheets[0].SetValue(3, 7, "12121");
 
             //    package.SaveAs(new FileInfo(@"Template\Template1.xlsx"));
             //}

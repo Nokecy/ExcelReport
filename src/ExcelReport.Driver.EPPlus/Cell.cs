@@ -22,7 +22,7 @@ namespace ExcelReport.Driver.EPPlus
         public object Value
         {
             get => ExcelWorksheet.Cells[RowIndex, ColumnIndex, RowIndex, ColumnIndex].Value;
-            set => ExcelWorksheet.Cells[RowIndex, ColumnIndex, RowIndex, ColumnIndex].Value = value;
+            set => ExcelWorksheet.SetValue(RowIndex, ColumnIndex, value);
         }
 
         public object GetOriginal()
