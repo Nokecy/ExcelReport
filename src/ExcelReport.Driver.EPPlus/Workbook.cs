@@ -7,16 +7,16 @@ namespace ExcelReport.Driver.EPPlus
 {
     public class Workbook : IWorkbook
     {
-        public ExcelWorkbook NpoiWorkbook { get; private set; }
+        public ExcelWorkbook ExcelWorkbook { get; private set; }
         public ExcelPackage ExcelPackage { get; private set; }
 
-        public Workbook(ExcelPackage package, ExcelWorkbook npoiWorkbook)
+        public Workbook(ExcelPackage package, ExcelWorkbook excelWorkbook)
         {
             ExcelPackage = package;
-            NpoiWorkbook = npoiWorkbook;
+            ExcelWorkbook = excelWorkbook;
         }
 
-        public ISheet this[string sheetName] => NpoiWorkbook.Worksheets[sheetName].GetAdapter();
+        public ISheet this[string sheetName] => ExcelWorkbook.Worksheets[sheetName].GetAdapter();
 
         public byte[] SaveToBuffer()
         {
@@ -30,7 +30,7 @@ namespace ExcelReport.Driver.EPPlus
 
         public IEnumerator<ISheet> GetEnumerator()
         {
-            foreach (ExcelWorksheet npoiSheet in NpoiWorkbook.Worksheets)
+            foreach (ExcelWorksheet npoiSheet in ExcelWorkbook.Worksheets)
             {
                 yield return npoiSheet.GetAdapter();
             }
@@ -43,7 +43,7 @@ namespace ExcelReport.Driver.EPPlus
 
         public object GetOriginal()
         {
-            return NpoiWorkbook;
+            return ExcelWorkbook;
         }
     }
 }
